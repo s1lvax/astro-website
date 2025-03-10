@@ -64,14 +64,14 @@ const projects = (await getCollection("projects"))
             Cesario Silva
           </p>
           <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Currently writing some code.
+            Full Stack Developer in Luxembourg
           </p>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
-            <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
-              Read my blog
+            <a href='/projects' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
+              View my projects
             </a>
-            <a href='/work' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
-              View my work
+            <a href='/blog' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+              Read my blog
             </a>
           </div>
         </div>
@@ -85,14 +85,37 @@ const projects = (await getCollection("projects"))
       <!-- About Section -->
       <section class="animate">
         <article>
-          <p>I am a <b><i>full stack developer</i></b>, <b><i>problem solver</i></b>, <b><i>self-learner</i></b>, <b><i>tech enthusiast</i></b>, <b><i>minimalist</i></b>, and a <b><i>perpetual student</i></b>.</p>
-          <p>With a passion for hands-on tech, I’ve developed solutions ranging from Raspberry Pi-based task tracking systems to web applications with SvelteKit and TailwindCSS. I have experience with automation, SASS (OLAP cubes), and love working with Docker and self-hosted setups.</p>
-          <p>Throughout my journey</p>
-          <p>I’ve built products that prioritize both clean, efficient code and engaging user experiences, spanning responsive websites, automated systems, and specialized data solutions.</p>
-          <p>Currently</p>
-          <p>I work at Goedert Gestion and as an independent developer, handling everything from concept planning and design to full-scale development, transforming ideas into reality through code.</p>
+          <h3>Freelance Full Stack Developer in Luxembourg | Tech Solutions & Web Development</h3>
+          <p>I am a <b><i>freelance full stack developer in Luxembourg</i></b>, a <b><i>creative problem solver</i></b>, a <b><i>self-learner</i></b>, a <b><i>tech enthusiast</i></b>, and a <b><i>minimalist</i></b>. As a <b><i>perpetual student</i></b>, I thrive on mastering new technologies and delivering cutting-edge solutions for clients across Luxembourg.</p>
+          <p>With a passion for hands-on tech, I specialize in developing custom solutions, including <b>Raspberry Pi-based systems</b>, <b>web applications with SvelteKit and TailwindCSS</b>, and <b>automation tools</b>. My expertise extends to <b>SASS (OLAP cubes)</b>, <b>Docker</b>, and <b>self-hosted setups</b>, making me a versatile freelance developer for businesses in Luxembourg.</p>
+          <p>Throughout my career, I’ve built products that combine <b>clean, efficient code</b> with <b>engaging user experiences</b>. From <b>responsive websites</b> to <b>automated systems</b> and <b>specialized data solutions</b>, I deliver tailored tech solutions that drive results.</p>
+          <p>Currently, I work with <b>Goedert Gestion</b> and as an <b>independent freelance developer in Luxembourg</b>. I handle every stage of development, from <b>concept planning</b> and <b>design</b> to <b>full-scale implementation</b>, transforming ideas into reality through innovative coding and tech expertise.</p>
+          <p>Looking for a <b>freelance full stack developer in Luxembourg</b>? Let’s collaborate to bring your vision to life with scalable, efficient, and user-friendly solutions.</p>
         </article>
-      </section>            
+      </section>    
+
+       <!-- Project Preview Section -->
+       <section class="animate">
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <p class="font-semibold text-black dark:text-white">
+              Recent projects
+            </p>
+            <a href="/projects" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                All projects
+              </span>
+            </a>
+          </div>
+          <ul class="space-y-4">
+            {projects.map((project) => (
+              <li>
+                <ArrowCard entry={project} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <!-- Blog Preview Section -->
       <section class="animate">
@@ -117,28 +140,7 @@ const projects = (await getCollection("projects"))
         </div>
       </section>
 
-       <!-- Project Preview Section -->
-      <section class="animate">
-        <div class="space-y-4">
-          <div class="flex justify-between">
-            <p class="font-semibold text-black dark:text-white">
-              Recent projects
-            </p>
-            <a href="/projects" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
-              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
-                All projects
-              </span>
-            </a>
-          </div>
-          <ul class="space-y-4">
-            {projects.map((project) => (
-              <li>
-                <ArrowCard entry={project} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+      
 
       <!-- Contact Section -->
       <section class="animate">
