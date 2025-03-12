@@ -5,10 +5,8 @@ date: "October 2024"
 draft: false
 tags:
   - Web Development
-  - API
   - SvelteKit
   - TailwindCSS
-  - PostgresQL
   - Docker
 ---
 

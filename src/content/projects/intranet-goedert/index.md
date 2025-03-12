@@ -6,8 +6,7 @@ draft: false
 tags:
   - Web Development
   - Ruby on Rails
-  - PostgreSQL
-  - Cloudflare
+  - Docker
 ---
 
 The Goedert Intranet, used for internal communications, photo-sharing, and document-sharing, was outdated and underutilized. The issues included:

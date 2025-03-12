@@ -4,9 +4,7 @@ summary: "Exploring the shared experiences of humanity and uncovering opportunit
 date: "May 10 2022"
 draft: false
 tags:
-  - Philosophy
-  - Self-Development
-  - Shower Thoughts
+  - Reflections
 ---
 
 ### Intro

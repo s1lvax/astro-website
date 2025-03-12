@@ -5,7 +5,6 @@ date: "May 2024"
 draft: false
 tags:
   - Web Development
-  - API
   - SvelteKit
   - TailwindCSS
   - Docker
